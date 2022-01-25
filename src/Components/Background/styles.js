@@ -8,5 +8,10 @@ background-size: cover;
 min-height: 100vh;
 display: flex;
 justify-content: end;
+align-items: center;
 padding: 97px;
+@media(max-width: 700px) {
+    justify-content: center;
+    padding: 0;
+  }
 `
