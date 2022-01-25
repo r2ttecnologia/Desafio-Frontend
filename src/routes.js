@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Login from "./pages/Authenticated"
-import Authenticated from "./pages/Login"
+import Login from "./pages/Login"
+import Authenticated from "./pages/Authenticated"
 
 const AppRoutes = () => {
 
