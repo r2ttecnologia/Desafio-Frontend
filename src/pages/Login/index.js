@@ -24,10 +24,16 @@ const schema = yup.object({
 const App = () => {
     const { register, handleSubmit, formState: { errors } } = useForm({ resolver: yupResolver(schema) });
 
-    const onSubmit = () => {
+    const navigate = useNavigate()
+
+    const onSubmit = (data) => {
+        if (data.email!== "exemplo@exemplo.com" || data.password !== "123456") {
+            return alert("Email ou senha errados. Veja o console e os dados estarão lá")
+        }
         navigate("/Authenticated")
     }
-    const navigate = useNavigate()
+    
+    console.log("email: exemplo@exemplo.com, senha: 123456");
 
     return (
         <Background inLogin={true}>
