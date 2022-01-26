@@ -1,7 +1,7 @@
-import React from "react"
+import React, { forwardRef } from "react"
 import { Input } from "./styles"
 
-const App = ({props}) => {
-    return (<Input {...props}/>)
-}
+const App = forwardRef((props, ref) => {
+    return (<Input ref={ref} {...props} />)
+})
 export default App
