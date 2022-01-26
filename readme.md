@@ -2,7 +2,7 @@
     Desafio para frontend - R2T Rebel Thinking Tech - Estágio
 </h1>
 <div align="center">
-<img src="logo.svg" alt="R2T Logo" style="margin-bottom:10px;"/>
+<img src="./src/assets/logo.svg" alt="R2T Logo" style="margin-bottom:10px;"/>
 
 <h2>
     Descrição
